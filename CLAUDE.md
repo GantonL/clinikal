@@ -14,10 +14,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Architecture Overview
 
-This is a SvelteKit application for generic clinic management platform called Clinical. The app helps small clinics manage their patients and their data.
+This is a SvelteKit application for generic clinic management platform called Clinikal. The app helps small clinics manage their patients and their data.
 
 ### Tech Stack
-- **Framework**: SvelteKit with TypeScript
+- **Framework**: Svelte 5, SvelteKit with TypeScript
 - **Database**: Supabase (PostgreSQL)
 - **Authentication**: Clerk
 - **UI**: Tailwind CSS + shadcn-svelte components
@@ -48,7 +48,6 @@ This is a SvelteKit application for generic clinic management platform called Cl
 **Component Architecture**:
 - `src/lib/components/ui/` - Base shadcn-svelte components
 - `src/lib/components/` - Application-specific components
-- `src/lib/components/app-table/` - Custom data table implementation
 
 **Data Models** (`src/lib/models/`):
 
