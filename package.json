@@ -48,6 +48,7 @@
 		"vitest": "^3.2.3"
 	},
 	"dependencies": {
-		"@supabase/supabase-js": "^2.50.0"
+		"@supabase/supabase-js": "^2.50.0",
+		"mode-watcher": "^1.0.8"
 	}
 }
