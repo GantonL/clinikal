@@ -21,7 +21,7 @@ const config: Config = {
 			loader: async () => (await import('./en-US/common.json')).default
 		},
 		{
-			locale: 'en',
+			locale: 'en-US',
 			key: 'seo',
 			loader: async () => (await import('./en-US/seo.json')).default
 		}

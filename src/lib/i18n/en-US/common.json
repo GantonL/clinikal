@@ -2,5 +2,31 @@
 	"locales": {
 		"he": "עברית",
 		"en": "English"
+	},
+	"brand": {
+		"name": "Clinikal",
+		"description": "Professional clinic management platform designed to streamline patient care, improve operational efficiency, and ensure compliance with healthcare standards."
+	},
+	"nav": {
+		"dashboard": "Dashboard",
+		"patients": "Patient Management",
+		"integrations": "Integrations",
+		"settings": "Settings",
+		"pricing": "Pricing",
+		"documentation": "Documentation",
+		"help_center": "Help Center",
+		"contact_support": "Contact Support"
+	},
+	"footer": {
+		"platform": "Platform",
+		"support": "Support",
+		"contact_info": "Contact Information",
+		"email": "support@clinikal.com",
+		"phone": "1-800-CLINIKAL",
+		"copyright": "© {year} Clinikal. All rights reserved.",
+		"privacy_policy": "Privacy Policy",
+		"terms_of_service": "Terms of Service",
+		"hipaa_compliance": "HIPAA Compliance",
+		"tagline": "Secure • Compliant • Reliable"
 	}
 }
