@@ -1,10 +1,12 @@
 import { AvailableLocals } from '$lib/enums/available-locales';
 
 export const localeCookieName = 'locale';
-export const defaultLocale = 'he';
+export const defaultLocale = AvailableLocals.Hebrew;
 export const directionMap: Partial<Record<AvailableLocals, DirectionSetting>> = {
-	[AvailableLocals.Hebrew]: 'rl'
+	[AvailableLocals.Hebrew]: 'rl',
+	[AvailableLocals.English_US]: 'lr'
 };
 export const getDirection = (locale: AvailableLocals): DirectionSetting => {
-	return directionMap[locale] ?? directionMap[AvailableLocals.Hebrew]!;
+	const directionSelection = directionMap[locale] ?? directionMap[defaultLocale]!;
+	return directionSelection;
 };
