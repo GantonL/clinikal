@@ -57,14 +57,8 @@
 				>
 					<p>{$t('common.copyright', { year: new Date().getFullYear().toString() })}</p>
 					<div class="flex space-x-6">
-						<Link
-							class="hover:text-foreground transition-colors"
-							link={{ path: '/privacy', label: 'common.privacy_policy' }}
-						/>
-						<Link
-							class="hover:text-foreground transition-colors"
-							link={{ path: '/term', label: 'common.terms_of_service' }}
-						/>
+						<Link link={{ path: '/privacy', label: 'common.privacy_policy' }} />
+						<Link link={{ path: '/term', label: 'common.terms_of_service' }} />
 					</div>
 				</div>
 				<div class="text-muted-foreground text-sm">
