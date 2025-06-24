@@ -19,9 +19,8 @@
 	"platform": "פלטפורמה",
 	"support": "תמיכה",
 	"contact_information": "פרטי יצירת קשר",
-	"copyright": "© {year} Clinikal. כל הזכויות שמורות.",
+	"copyright": "© {{year}} Clinikal. כל הזכויות שמורות.",
 	"privacy_policy": "מדיניות פרטיות",
 	"terms_of_service": "תנאי שירות",
-	"hipaa_compliance": "תאימות HIPAA",
 	"footer_tagline": "בטוח • תואם • אמין"
 }

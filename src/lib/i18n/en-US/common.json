@@ -16,11 +16,10 @@
 	"documentation": "Documentation",
 	"help_center": "Help Center",
 	"contact_support": "Contact Support",
-	"hipaa_compliance": "HIPAA Compliance",
 	"platform": "Platform",
 	"support": "Support",
 	"contact_information": "Contact Information",
-	"copyright": "© {year} Clinikal. All rights reserved.",
+	"copyright": "© {{year}} Clinikal. All rights reserved.",
 	"privacy_policy": "Privacy Policy",
 	"terms_of_service": "Terms of Service",
 	"footer_tagline": "Secure • Compliant • Reliable"

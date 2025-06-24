@@ -2,8 +2,12 @@ import i18n, { type Config } from 'sveltekit-i18n';
 import { Locale } from '../../routes/api';
 import { defaultLocale } from '$lib/api/configurations/common';
 
+interface Params {
+	year: string;
+}
+
 /** @type {import('sveltekit-i18n').Config} */
-const config: Config = {
+const config: Config<Params> = {
 	loaders: [
 		{
 			locale: 'he',

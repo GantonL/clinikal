@@ -55,12 +55,16 @@
 				<div
 					class="text-muted-foreground flex flex-col items-center space-y-2 text-sm md:flex-row md:space-y-0 md:space-x-6"
 				>
-					<p>{$t('common.copyright', { year: new Date().getFullYear() })}</p>
+					<p>{$t('common.copyright', { year: new Date().getFullYear().toString() })}</p>
 					<div class="flex space-x-6">
-					    <Link class="hover:text-foreground transition-colors"
-							link={ path:'/privacy', label:'common.privacy_policy' } />
-					    <Link class="hover:text-foreground transition-colors"
-							link={ path:'/term', label:'common.terms_of_service' } />
+						<Link
+							class="hover:text-foreground transition-colors"
+							link={{ path: '/privacy', label: 'common.privacy_policy' }}
+						/>
+						<Link
+							class="hover:text-foreground transition-colors"
+							link={{ path: '/term', label: 'common.terms_of_service' }}
+						/>
 					</div>
 				</div>
 				<div class="text-muted-foreground text-sm">
