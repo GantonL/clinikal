@@ -1,4 +1,4 @@
-import { defaultLocale, getDirection } from '$lib/api/configurations/common';
+import { defaultLocale, getDirection, localeCookieName } from '$lib/api/configurations/common';
 import type { AvailableLocals } from '$lib/enums/available-locales';
 import { Locale } from '../api';
 import type { LayoutLoad } from './$types';

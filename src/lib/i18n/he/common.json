@@ -5,28 +5,23 @@
 	},
 	"brand": {
 		"name": "Clinikal",
-		"description": "פלטפורמה מקצועית לניהול מרפאות שנועדה לייעל טיפול בחולים, לשפר את היעילות התפעולית ולהבטיח עמידה בתקני בריאות."
+		"description": "פלטפורמה מקצועית לניהול מרפאות שנועדה לייעל טיפול בחולים, לשפר את היעילות התפעולית ולהבטיח עמידה בתקני בריאות.",
+		"email": "support@clinikal.com"
 	},
-	"nav": {
-		"dashboard": "לוח בקרה",
-		"patients": "ניהול חולים",
-		"integrations": "אינטגרציות",
-		"settings": "הגדרות",
-		"pricing": "תמחור",
-		"documentation": "תיעוד",
-		"help_center": "מרכז עזרה",
-		"contact_support": "צור קשר עם התמיכה"
-	},
-	"footer": {
-		"platform": "פלטפורמה",
-		"support": "תמיכה",
-		"contact_info": "פרטי יצירת קשר",
-		"email": "support@clinikal.com",
-		"phone": "1-800-CLINIKAL",
-		"copyright": "© {year} Clinikal. כל הזכויות שמורות.",
-		"privacy_policy": "מדיניות פרטיות",
-		"terms_of_service": "תנאי שירות",
-		"hipaa_compliance": "תאימות HIPAA",
-		"tagline": "בטוח • תואם • אמין"
-	}
+	"dashboard": "לוח בקרה",
+	"patients": "מטופלים",
+	"integrations": "אינטגרציות",
+	"settings": "הגדרות",
+	"pricing": "תמחור",
+	"documentation": "תיעוד",
+	"help_center": "מרכז עזרה",
+	"contact_support": "צור קשר עם התמיכה",
+	"platform": "פלטפורמה",
+	"support": "תמיכה",
+	"contact_information": "פרטי יצירת קשר",
+	"copyright": "© {year} Clinikal. כל הזכויות שמורות.",
+	"privacy_policy": "מדיניות פרטיות",
+	"terms_of_service": "תנאי שירות",
+	"hipaa_compliance": "תאימות HIPAA",
+	"footer_tagline": "בטוח • תואם • אמין"
 }
