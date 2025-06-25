@@ -7,6 +7,8 @@
 	import type { AvailableLocals } from '$lib/enums/available-locales';
 	import { direction } from '$lib/stores';
 	import { directionMap } from '$lib/api/configurations/common';
+	import * as Sidebar from '$lib/components/ui/sidebar';
+	import AppSidebar from '$lib/components/sidebar/sidebar.svelte';
 	let { children } = $props();
 
 	onMount(() => {
@@ -27,6 +29,9 @@
 </script>
 
 <ModeWatcher />
-<Shell>
-	{@render children?.()}
-</Shell>
+<Sidebar.Provider>
+	<AppSidebar />
+	<Shell>
+		{@render children?.()}
+	</Shell>
+</Sidebar.Provider>
