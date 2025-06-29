@@ -4,7 +4,7 @@
 	import Link from '../link/link.svelte';
 </script>
 
-<footer class="bg-secondary border-border mt-auto border-t">
+<footer class="bg-background border-border mt-auto border-t">
 	<div class="container mx-auto px-6 py-12">
 		<div class="grid grid-cols-1 gap-8 md:grid-cols-4">
 			<!-- Brand Section -->
