@@ -1,4 +1,4 @@
-import { defaultLocale, getDirection, localeCookieName } from '$lib/api/configurations/common';
+import { defaultLocale, getDirection } from '$lib/api/configurations/common';
 import type { AvailableLocals } from '$lib/enums/available-locales';
 import { Locale } from '../api';
 import type { LayoutLoad } from './$types';
@@ -14,7 +14,8 @@ export const load: LayoutLoad = async ({ fetch, params }) => {
 		choosenLocale = defaultLocale;
 	}
 	locale.set(choosenLocale);
-	direction.set(getDirection(locale.get() as AvailableLocals));
+	const newDirection = getDirection(locale.get() as AvailableLocals);
+	direction.set(newDirection);
 	await loadTranslations(choosenLocale);
 	return {
 		locale: choosenLocale

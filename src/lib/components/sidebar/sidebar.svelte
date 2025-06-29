@@ -3,8 +3,27 @@
 	import { page } from '$app/state';
 	import { useSidebar } from '$lib/components/ui/sidebar';
 	import type { Link } from '$lib/interfaces/link';
-	import { t } from '$lib/i18n';
+	import { locale, t } from '$lib/i18n';
+	import { onMount } from 'svelte';
+	import type { AvailableLocals } from '$lib/enums/available-locales';
+	import { directionMap } from '$lib/api/configurations/common';
+	import { direction } from '$lib/stores';
 
+	let side = $state<'right' | 'left'>('right');
+	onMount(() => {
+		locale.subscribe((seletedLocale) => {
+			updateSide(seletedLocale as AvailableLocals);
+		});
+	});
+	function updateSide(locale: AvailableLocals) {
+		if (!locale) {
+			return;
+		}
+		if (document) {
+			const dir = directionMap[locale] ?? $direction;
+			side = dir === 'lr' ? 'left' : 'right';
+		}
+	}
 	const groups: { label: string; items: Link[]; collapsible?: boolean }[] = [
 		{
 			label: 'common.platform',
@@ -27,7 +46,7 @@
 	}
 </script>
 
-<Sidebar.Root collapsible="icon">
+<Sidebar.Root collapsible="icon" {side}>
 	<Sidebar.Content>
 		{#each groups as group (group.label)}
 			<Sidebar.Group>
