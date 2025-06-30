@@ -1,7 +1,31 @@
-<script>
-	import { t } from '$lib/i18n';
+<script lang="ts">
+	import { t, changeLocale, locale } from '$lib/i18n';
 	import { platformLinks, supportLinks } from '$lib/common/routes';
 	import Link from '../link/link.svelte';
+	import Combobox from '../combobox/combobox.svelte';
+	import type { ComboboxConfiguration } from '$lib/interfaces/combobox';
+
+	// Language selector configuration
+	const languageConfig: ComboboxConfiguration = {
+		options: [
+			{
+				value: 'he',
+				label: $t('common.locales.he')
+			},
+			{
+				value: 'en-US',
+				label: $t('common.locales.en')
+			}
+		],
+		placeholder: 'Select language',
+		event: 'language_changed'
+	};
+
+	function handleLanguageChange(event: { type: string; data: string }) {
+		if (event.type === 'language_changed') {
+			changeLocale(event.data);
+		}
+	}
 </script>
 
 <footer class="bg-background border-border mt-auto border-t">
@@ -61,8 +85,14 @@
 						<Link link={{ path: '/term', label: 'common.terms_of_service' }} />
 					</div>
 				</div>
-				<div class="text-muted-foreground text-sm">
-					<p>{$t('common.footer_tagline')}</p>
+				<div class="flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-4">
+					<div class="flex items-center">
+						<Combobox
+							configuration={languageConfig}
+							selectedOption={$locale}
+							event={handleLanguageChange}
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
