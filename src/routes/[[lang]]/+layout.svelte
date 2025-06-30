@@ -24,6 +24,7 @@
 		if (document) {
 			const dir = directionMap[locale] ?? $direction;
 			document.dir = dir === 'lr' ? 'ltr' : 'rtl';
+			direction.set(dir);
 		}
 	}
 </script>
