@@ -2,5 +2,5 @@
 	import { t } from '$lib/i18n';
 	import { title } from '$lib/stores';
 
-	title.set(t.get('common.settings'));
+	title.set(t.get('common.pricing'));
 </script>

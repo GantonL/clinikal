@@ -5,7 +5,7 @@
 	import { ModeWatcher } from 'mode-watcher';
 	import { locale } from '$lib/i18n';
 	import type { AvailableLocals } from '$lib/enums/available-locales';
-	import { direction } from '$lib/stores';
+	import { direction, title } from '$lib/stores';
 	import { directionMap } from '$lib/api/configurations/common';
 	import * as Sidebar from '$lib/components/ui/sidebar';
 	import AppSidebar from '$lib/components/sidebar/sidebar.svelte';
@@ -29,6 +29,9 @@
 	}
 </script>
 
+<svelte:head>
+	<title>{$title}</title>
+</svelte:head>
 <ModeWatcher />
 <Sidebar.Provider>
 	<AppSidebar />
