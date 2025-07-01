@@ -8,6 +8,7 @@
 	import type { AvailableLocals } from '$lib/enums/available-locales';
 	import { directionMap } from '$lib/api/configurations/common';
 	import { direction } from '$lib/stores';
+	import { platformLinks, supportLinks } from '$lib/common/routes';
 
 	let side = $state<'right' | 'left'>('right');
 	onMount(() => {
@@ -27,12 +28,12 @@
 	const groups: { label: string; items: Link[]; collapsible?: boolean }[] = [
 		{
 			label: 'common.platform',
-			items: []
+			items: platformLinks
 		},
 		{
 			label: 'common.support',
 			collapsible: true,
-			items: []
+			items: supportLinks
 		}
 	];
 	let currentPath = $derived(page.url.pathname);
@@ -57,7 +58,7 @@
 					<Sidebar.Menu>
 						{#each group.items as item (item.label)}
 							<Sidebar.MenuItem>
-								<Sidebar.MenuButton isActive={currentPath.startsWith(item.path)}>
+								<Sidebar.MenuButton isActive={currentPath === item.path}>
 									{#snippet child({ props })}
 										<a href={item.path} {...props} onclick={onSidebarLink}>
 											<item.icon />

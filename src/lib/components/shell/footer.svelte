@@ -40,7 +40,6 @@
 				<div class="mt-6">
 					<p class="text-foreground text-sm font-medium">{$t('common.contact_information')}</p>
 					<p class="text-muted-foreground mt-1 text-sm">{$t('common.brand.email')}</p>
-					<p class="text-muted-foreground text-sm">1-800-CLINIKAL</p>
 				</div>
 			</div>
 
